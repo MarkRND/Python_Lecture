@@ -11,3 +11,8 @@ for i in range(1, num + 1):
     count *= i
     mass.append(count)
 print(f'Произведение чисел от 1 до {num} -> {mass}')
+
+import math
+num = int(input('Введите число: '))
+mass = [math.factorial(i) for i in range(1, num + 1)]
+print(f'Произведение чисел от 1 до {num} -> {mass}')

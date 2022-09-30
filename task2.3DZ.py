@@ -11,3 +11,7 @@ for i in range (1, num + 1):
 print('Cписок из n чисел последовательности (1+1/n)^n')
 print(mass)
 print(f'Сумма чисел -> {sum(mass)}')
+
+num = int(input('Введите число: '))
+mass = [((1 + (1 / i)) ** i)for i in range (1, num + 1)]
+print(f'Сумма чисел -> {sum(mass)}')

@@ -8,10 +8,20 @@
 
 
 import random
+
 num = int(input('Введите длинну списка: '))
-list = [random.randint(-15,20)for i in range(num)]
+list = [random.randint(-15,20)for i in range()]
 result = 0
 for i in range(1,len(list),2): 
     result += list[i]
 print()
 print(f'Сумма {list} -> {result}')
+
+def sumofunemen(mass):
+
+result = 0
+for i in range(1,len(mass),2): 
+    result += mass[i]
+a = [random.randint(-15,20)for i in range()]
+print()  
+sumofunemen(a)  

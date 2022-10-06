@@ -12,3 +12,8 @@ while num >= 1:
         bin.insert(0, num % 2)
         num = num // 2
 print(bin)
+
+
+num = int(input('Введите число: '))
+print(bin(num))
+print(str(bin(num))[2::])

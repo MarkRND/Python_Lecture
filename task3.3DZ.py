@@ -15,3 +15,21 @@ subt = (max(new_list)) - min(new_list)
 print()
 print(list)
 print(f'Разницу между максимальным и минимальным значением дробной части элементов: {round(subt,2)}')
+
+
+
+
+def f1(n):
+    res = str(n)
+    fif = res.find('.')
+    res = int('0.' + res[fif+1::])
+    return res
+
+def diff(mass):
+    res=[]
+
+    for i in mass:
+        res.append(f1(i))
+    print(max(res)-min(res))
+a = [3.1, 1.4, 3.1, 5.6, 9.81]
+diff[a]

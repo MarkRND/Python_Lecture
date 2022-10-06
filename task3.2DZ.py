@@ -18,3 +18,17 @@ else:
 works = [list[i]*list[len(list)-i-1] for i in range(size)]
 print()
 print(f'Gроизведение пар чисел списка :{list} -> {works}')
+
+
+
+def sumofunemen(mass):
+resmass = []
+if len(mass) % 2 == 0:    
+    for i in range(len(mass//2)):
+        resmass.append(mass[i] * mass[len(mass) -1 -i])
+else:
+    for i in range(len(mass//2 + 1)):
+        resmass.append(mass[i] * mass[len(mass) -1 -i])
+a = [random.randint(1,10) for i in range(5)]
+print(a)
+print(sumofunemen(a))
